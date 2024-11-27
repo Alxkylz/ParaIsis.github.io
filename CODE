@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffe6e6, #ffd1d1);
+            color: #444;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ff5c5c;
+            margin: 20px 0;
+        }
+
+        .changing-languages {
+            font-size: 1.5rem;
+            color: #ff8a8a;
+            animation: fade 3s infinite;
+        }
+
+        @keyframes fade {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .message p {
+            font-size: 1.2rem;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin: 20px auto;
+            background: #ff5c5c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff8a8a;
+        }
+
+        .languages {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .languages ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .languages li {
+            background: #ffe6e6;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Esto es un pequeño mensaje para ti Isis ❤️</h1>
+            <p class="changing-languages">I love you | Je t'aime | Ich liebe dich | Ti amo | 사랑해 | 愛してる</p>
+        </header>
+        <main>
+            <section class="message">
+                <p>
+                    Mi vida, quiero que sepas que puedes contar conmigo para contarme si te sientes mal o tienes algún problema, 
+                    también que puedes confiar en mí para cualquier cosa o problema que tengas. Yo siempre voy a estar ahí para 
+                    apoyarte. Quiero que puedas tener esa libertad de decirme cómo te sientes en todo momento, porque además de 
+                    ser tu novio puedo ser esa persona que está para escucharte y con la que te puedes desahogar. Te amo con toda 
+                    mi alma y no me gusta verte desanimada. Me preocupo mucho por ti y quiero que seas feliz.
+                </p>
+            </section>
+            <button id="reveal-languages">Te amo en todos los idiomas</button>
+            <div class="languages hidden">
+                <ul>
+                    <li>Español: Te amo</li>
+                    <li>Inglés: I love you</li>
+                    <li>Francés: Je t'aime</li>
+                    <li>Alemán: Ich liebe dich</li>
+                    <li>Italiano: Ti amo</li>
+                    <li>Coreano: 사랑해</li>
+                    <li>Japonés: 愛してる</li>
+                    <li>Ruso: Я тебя люблю</li>
+                    <li>Árabe: أحبك</li>
+                    <li>Portugués: Eu te amo</li>
+                    <li>Chino (Simplificado): 我爱你 (Wǒ ài nǐ)</li>
+                    <li>Hindi: मैं तुमसे प्यार करता हूँ (Main tumse pyaar karta hoon)</li>
+                    <li>Griego: Σ'αγαπώ (S'agapó)</li>
+                    <li>Turco: Seni seviyorum</li>
+                    <li>Holandés: Ik hou van jou</li>
+                    <li>Sueco: Jag älskar dig</li>
+                    <li>Noruego: Jeg elsker deg</li>
+                    <li>Danés: Jeg elsker dig</li>
+                    <li>Finlandés: Rakastan sinua</li>
+                    <li>Polaco: Kocham cię</li>
+                    <li>Checo: Miluji tě</li>
+                    <li>Húngaro: Szeretlek</li>
+                    <li>Hebreo: אני אוהב אותך (Ani ohev otach)</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>Gracias por todo el cariño y el amor que me das, neta te amo mi niña de ojos hermosos 🌟</p>
+        </footer>
+    </div>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        
+    </audio>
+    <script>
+        document.getElementById('reveal-languages').addEventListener('click', () => {
+            const languagesDiv = document.querySelector('.languages');
+            languagesDiv.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
